@@ -1,0 +1,6 @@
+{
+  "useCompilerFolder": true,
+  "doNotPublishApps": true,
+  "runs-on": "ubuntu-latest",
+  "githubRunner": "ubuntu-latest"
+}
