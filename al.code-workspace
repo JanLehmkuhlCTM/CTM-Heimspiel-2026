@@ -4,5 +4,23 @@
             "path": ".AL-Go"
         }
     ],
-    "settings": {}
+     "settings": {
+        "al.enableCodeActions": true,
+        "al.enableCodeAnalysis": true,
+        "al.codeAnalyzers": [
+            "${CodeCop}",
+            "${UICop}",
+            "${PerTenantExtensionCop}"
+        ],
+        "CRS.ObjectNameSuffix": "",
+        "CRS.FileNamePattern": "<ObjectNameShort>.<ObjectType>.al",
+        "CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+        "CRS.NamespacePrefixToIgnore": "CTM.Heimspiel",
+        "CRS.ReorganizeByNamespace": true,
+        "al.backgroundCodeAnalysis": "Project",
+        "alOutline.completionProviders": [
+            "VariableNamesWithType",
+            "VariableNames"
+        ]
+    }
 }
