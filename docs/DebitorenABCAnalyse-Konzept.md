@@ -46,24 +46,28 @@ Die Umsetzung orientiert sich an der im ursprünglichen Feature-Entwurf beschrie
 6. Feld `ABC Class` am Debitor aktualisieren
 7. Debitoren ohne Umsatz auf leere Klasse zurücksetzen
 
-## Klärungsfragen
+## Bestätigte Rahmenbedingungen
 
-Vor der eigentlichen Implementierung sollten diese Punkte bestätigt werden:
+Die fachliche Abstimmung hat für die erste Ausbaustufe folgende Entscheidungen bestätigt:
 
 1. **Persistenz**
-   - Soll die Klasse dauerhaft im Debitor gespeichert werden oder nur bei Bedarf berechnet angezeigt werden?
+   - Die Klasse wird auf Tabellenebene dauerhaft am Debitor gespeichert.
 2. **Ausführungszeitpunkt**
-   - Reicht ein manueller Reportlauf oder wird zusätzlich ein geplanter Hintergrundlauf benötigt?
-3. **Datenverständnis**
-   - Soll `Sales (LCY)` bewusst den gesamten Zeitraum abdecken oder wird später doch ein Filter (z. B. Geschäftsjahr) benötigt?
-4. **Transparenz**
-   - Soll der Report am Ende nur eine Erfolgsmeldung zeigen oder zusätzlich Anzahl der aktualisierten Debitoren zurückmelden?
-5. **Sperr- und Performance-Verhalten**
-   - Ist die Verarbeitung für größere Debitorenbestände ausreichend, oder werden Batch-/Commit-Überlegungen benötigt?
-6. **Manuelle Pflege**
+   - Die Analyse wird zunächst manuell gestartet.
+   - Eine spätere Automatisierung soll möglich bleiben.
+3. **Zeitraum**
+   - `Sales (LCY)` wird über den gesamten Zeitraum ausgewertet.
+4. **Rückmeldung des Reports**
+   - Der Report liefert keine zusätzliche Rückmeldung nach der Verarbeitung.
+5. **Performance- und Sperrverhalten**
+   - Für die erste Version sind hierzu keine besonderen Maßnahmen erforderlich.
+6. **Testumfang**
+   - Es sind einfache Tests für die Kernlogik vorgesehen.
+
+## Noch zu bestätigen
+
+1. **Manuelle Pflege**
    - Ist die Klasse ausschließlich systemseitig gepflegt oder soll es perspektivisch eine fachliche Übersteuerung geben?
-7. **Testabdeckung**
-   - Welche fachlichen Beispiele sollen mindestens automatisiert validiert werden (z. B. Grenzwerte 50/80/100 % und Debitoren ohne Umsatz)?
 
 ## Umsetzungs-Runbook
 
