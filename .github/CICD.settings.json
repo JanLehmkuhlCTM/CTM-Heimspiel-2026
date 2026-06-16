@@ -1,6 +1,15 @@
 {
   "useCompilerFolder": true,
-  "doNotPublishApps": true,
-  "runs-on": "ubuntu-latest",
-  "githubRunner": "ubuntu-latest"
+  "doNotPublishApps": false,
+  "doNotRunTests": false,
+  "runs-on": "windows-latest",
+  "githubRunner": "windows-latest",
+  "workspaceCompilation": {
+    "enabled": true,
+    "parallelism": 0
+  },
+  "workflowConcurrency": [
+    "group: ${{ github.workflow }}-${{ github.ref }}",
+    "cancel-in-progress: true"
+  ]
 }

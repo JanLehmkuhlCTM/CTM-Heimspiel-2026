@@ -1,9 +1,33 @@
 {
   "$schema": "https://raw.githubusercontent.com/microsoft/AL-Go-Actions/v9.0/.Modules/settings.schema.json",
   "country": "de",
-  "appFolders": [],
-  "testFolders": [],
+  "appFolders": [
+    "CTM Custom App"
+  ],
+  "testFolders": [
+    "CTM Custom Test App"
+  ],
   "bcptTestFolders": [],
   "artifact": "/sandbox//de/Weekly",
-  "assignPremiumPlan": true
+  "assignPremiumPlan": true,
+  "enableCodeCop": true,
+  "enableUICop": true,
+  "enableCodeAnalyzersOnTestApps": true,
+  "failOn": "newWarning",
+  "reportSuppressedDiagnostics": true,
+  "fullBuildPatterns": [
+    ".github/**",
+    ".AL-Go/**"
+  ],
+  "workspaceCompilation": {
+    "enabled": true,
+    "parallelism": 0
+  },
+  "incrementalBuilds": {
+    "onPush": true,
+    "onPull_Request": true,
+    "onSchedule": false,
+    "retentionDays": 30,
+    "mode": "modifiedApps"
+  }
 }
