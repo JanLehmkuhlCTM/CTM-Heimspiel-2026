@@ -12,6 +12,12 @@
   "logo": "",
   "dependencies": [
     {
+      "publisher": "CTM Computer Technik Marketing GmbH",
+      "name": "CTM Custom App",
+      "id": "a38eec02-74fc-45fb-84aa-516b3cefbada",
+      "version": "1.0.0.0"
+    },
+    {
       "publisher": "Microsoft",
       "name": "Library Assert",
       "id": "dd0be2ea-f733-4d65-bb34-a28f4624fb14",
