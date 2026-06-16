@@ -63,11 +63,9 @@ Die fachliche Abstimmung hat für die erste Ausbaustufe folgende Entscheidungen 
    - Für die erste Version sind hierzu keine besonderen Maßnahmen erforderlich.
 6. **Testumfang**
    - Es sind einfache Tests für die Kernlogik vorgesehen.
-
-## Noch zu bestätigen
-
-1. **Manuelle Pflege**
-   - Ist die Klasse ausschließlich systemseitig gepflegt oder soll es perspektivisch eine fachliche Übersteuerung geben?
+7. **Manuelle Pflege**
+   - Die Klasse wird ausschließlich systemseitig gepflegt.
+   - Eine manuelle Überschreibung ist nicht zulässig.
 
 ## Umsetzungs-Runbook
 
